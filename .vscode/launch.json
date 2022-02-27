@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ConfigServerApplication",
+            "request": "launch",
+            "mainClass": "com.gbs.plus.config.configserver.ConfigServerApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-DiscoveryServerApplication<discovery-server>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -18,6 +24,26 @@
             "console": "internalConsole",
             "mainClass": "com.gbs.plus.discvoery.discoveryclient.DiscoveryClientApplication",
             "projectName": "discovery-client",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ConfigServerApplication<config-server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.gbs.plus.config.configserver.ConfigServerApplication",
+            "projectName": "config-server",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DiscoveryProducerApplication<discovery-producer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.gbs.plus.discovery.discoveryproducer.DiscoveryProducerApplication",
+            "projectName": "discovery-producer",
             "args": ""
         }
     ]

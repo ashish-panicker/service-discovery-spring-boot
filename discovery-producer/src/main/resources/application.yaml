@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: discovery-producer
+server:
+  port: 7070
+  servlet:
+    context-path: /books
